@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CV Ryan Subitha Maliq Rasheed</title>
+  <!-- Bootstrap CSS -->
+  <link href="C:/belajar HTML/Ryan/Tugas Bootstrap/bootstrap-5.2.3-dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <style>
+    /* Gaya dasar untuk seluruh halaman */
+    body {
+      background-color: #f9f9f9; /* Warna latar belakang halaman */
+      color: #222; /* Warna teks utama */
+    }
+
+    /* Gaya untuk gambar logo fakultas dan kampus */
+    .logo-img {
+      width: 60px; /* Lebar logo */
+      height: 60px; /* Tinggi logo */
+      object-fit: contain; /* Menyesuaikan gambar tanpa merusak rasio */
+      border-radius: 8px; /* Membuat sudut logo agak membulat */
+      background: white; /* Latar belakang putih agar logo terlihat jelas */
+      border: 1px solid #ddd; /* Garis tipis di sekitar logo */
+    }
+
+    /* Bagian banner/header di atas */
+    .banner {
+      background-color: #003366; /* Warna latar banner */
+      color: white; /* Warna teks di banner */
+      padding: 15px 20px; /* Jarak dalam banner */
+      margin-bottom: 30px; /* Jarak bawah banner ke konten utama */
+      box-shadow: 0 2px 8px rgb(0 0 0 / 0.1); /* Bayangan lembut */
+      display: flex; /* Menggunakan flexbox untuk tata letak horizontal */
+      align-items: center; /* Menyelaraskan vertikal konten di tengah */
+    }
+
+    /* Gaya judul dalam banner */
+    .banner h1 {
+      font-size: 1.8rem; /* Ukuran font judul */
+    }
+
+    /* Gaya paragraf dalam banner */
+    .banner p {
+      font-size: 1.1rem; /* Ukuran font subtitle */
+    }
+
+    /* Gaya untuk foto profil */
+    .profile-img {
+      max-width: 160px; /* Lebar maksimal foto */
+      border-radius: 10px; /* Sudut foto agak membulat */
+      object-fit: cover; /* Memotong gambar agar memenuhi area */
+      border: 3px solid #003366; /* Bingkai foto warna biru tua */
+    }
+
+    /* Gaya umum untuk judul h1, h2, dan h3 */
+    h1, h2, h3 {
+      font-weight: 600; /* Ketebalan font */
+    }
+
+    /* Gaya link */
+    a {
+      color: #003366; /* Warna biru untuk link */
+      text-decoration: none; /* Hilangkan garis bawah */
+    }
+    a:hover {
+      text-decoration: underline; /* Garis bawah saat hover */
+    }
+
+    /* Judul untuk setiap section */
+    .section-title {
+      border-bottom: 2px solid #003366; /* Garis bawah biru */
+      padding-bottom: 6px; /* Jarak bawah teks */
+      margin-bottom: 15px; /* Jarak bawah section title ke konten */
+      font-size: 1.5rem; /* Ukuran font section title */
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Bagian banner/header atas dengan logo fakultas dan kampus -->
+  <header class="banner">
+    <!-- Container untuk logo fakultas dan kampus -->
+    <div class="d-flex align-items-center me-3">
+      <img src="images/pp.png" alt="Logo Fakultas" class="logo-img me-2" />
+      <img src="images/p.png" alt="Logo Kampus" class="logo-img" />
+    </div>
+    <!-- Nama dan status di samping logo -->
+    <div>
+      <h1 class="mb-1">Ryan Subitha Maliq Rasheed</h1> <!-- Nama lengkap -->
+      <p class="mb-0">Mahasiswa Universitas Budi Luhur</p> <!-- Status/posisi -->
+    </div>
+  </header>
+
+  <!-- Konten utama CV -->
+  <main class="container bg-white p-4 rounded shadow-sm">
+    <!-- Bagian atas: foto profil dan kontak -->
+    <div class="row mb-4 align-items-center">
+      <!-- Kolom foto profil -->
+      <div class="col-md-3 text-center mb-3 mb-md-0">
+        <img src="images/ppppp.jpg" alt="Foto Diri" class="profile-img" />
+      </div>
+      <!-- Kolom informasi kontak dan deskripsi singkat -->
+      <div class="col-md-9">
+        <!-- Kontak: email dan telepon -->
+        <p>
+          <strong>Email:</strong> ryantongko0505@example.com <br />
+          <strong>Telepon:</strong> +62 811-1580-505
+        </p>
+
+        <!-- Deskripsi singkat tentang diri -->
+        <p class="fst-italic text-muted">
+          Mahasiswa Teknik Informatika yang antusias dengan pengembangan perangkat lunak dan teknologi terbaru. Bersemangat untuk belajar dan berkontribusi dalam proyek-proyek inovatif.
+        </p>
+      </div>
+    </div>
+
+    <!-- Bagian Pendidikan -->
+    <section class="mb-5">
+      <h2 class="section-title">Pendidikan</h2>
+      <div class="table-responsive">
+        <table class="table table-striped table-bordered align-middle">
+          <thead class="table-primary text-center">
+            <tr>
+              <th>Tingkat</th> <!-- Tingkat pendidikan -->
+              <th>Nama Sekolah/Universitas</th> <!-- Nama institusi -->
+              <th>Tahun</th> <!-- Tahun masuk dan lulus -->
+              <th>Keterangan</th> <!-- Catatan tambahan, misal IPK -->
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Kuliah</td>
+              <td>Universitas Contoh — S1 Teknik Informatika</td>
+              <td>2024–Sekarang</td>
+              <td>IPK saat ini: 3.94</td>
+            </tr>
+            <tr>
+              <td>SMA</td>
+              <td>SMA Contoh — Program IPA</td>
+              <td>2021–2024</td>
+              <td>Lulus</td>
+            </tr>
+            <tr>
+              <td>SMP</td>
+              <td>SMP 177 Jakarta</td>
+              <td>2018–2021</td>
+              <td>Lulus</td>
+            </tr>
+            <tr>
+              <td>SD</td>
+              <td>SD Pembangunan Jaya</td>
+              <td>2012–2018</td>
+              <td>Lulus</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- Bagian Pengalaman Organisasi -->
+    <section class="mb-5">
+      <h2 class="section-title">Pengalaman Organisasi</h2>
+      <ol class="ps-3">
+        <li>Anggota UKM Bola Basket UBL (2024–Sekarang)</li>
+        <li>OSIS SMA Kartika X-1 (2022)
+          <ul>
+            <li>Seksi Olahraga</li>
+          </ul>
+        </li>
+        <li>OSIS SMP 177 Jakarta (2022)
+          <ul>
+            <li>Bendahara</li>
+          </ul>
+        </li>
+      </ol>
+    </section>
+
+    <!-- Bagian Keahlian -->
+    <section class="mb-5">
+      <h2 class="section-title">Keahlian</h2>
+      <ul>
+        <li>Bahasa Pemrograman: Python, C, C++, HTML, Java</li>
+        <li>Database: MySQL, SQLite</li>
+        <li>Microsoft Office, Microsoft Excel</li>
+      </ul>
+    </section>
+
+    <!-- Bagian Kelebihan / Soft Skills -->
+    <section class="mb-5">
+      <h2 class="section-title">Kelebihan</h2>
+      <ul>
+        <li>Adaptif dan cepat belajar hal baru</li>
+        <li>Mampu bekerja sama dalam tim maupun individu</li>
+        <li>Disiplin dan bertanggung jawab</li>
+        <li>Kemampuan komunikasi yang baik</li>
+        <li>Kreatif dan good problem solving skills</li>
+        <li>Proficient dalam berbahasa Inggris</li>
+      </ul>
+    </section>
+
+    <!-- Bagian Media Sosial -->
+    <section>
+      <h2 class="section-title">Media Sosial</h2>
+      <a href="https://linkedin.com/in/username" target="_blank" class="me-3 btn btn-outline-primary btn-sm">LinkedIn</a>
+      <a href="https://tiktok.com/meowmaster69" target="_blank" class="me-3 btn btn-outline-danger btn-sm">TikTok</a>
+      <a href="https://instagram.com/ryanmaliq_" target="_blank" class="btn btn-outline-warning btn-sm">Instagram</a>
+    </section>
+  </main>
+
+  <!-- Bootstrap JS Bundle, diperlukan untuk beberapa fitur Bootstrap -->
+  <script src="C:/belajar HTML/Ryan/bootstrap-5.2.3-dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
